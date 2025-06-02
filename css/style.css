@@ -56,8 +56,10 @@ nav a {
 }
 .product img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
 .product-detail {
   padding: 2rem;
