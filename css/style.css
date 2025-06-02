@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
   background: #B89C7A;
   color: white;
@@ -12,16 +13,19 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 nav a {
   margin: 0 1rem;
   color: white;
   text-decoration: none;
 }
+
 .hero {
   text-align: center;
   padding: 4rem 2rem;
   background: #EEE8E1;
 }
+
 .btn {
   background: #2F2F2F;
   color: white;
@@ -29,6 +33,7 @@ nav a {
   text-decoration: none;
   border-radius: 8px;
 }
+
 .btn-small {
   background: #2F2F2F;
   color: white;
@@ -37,23 +42,26 @@ nav a {
   border-radius: 6px;
   font-size: 0.9rem;
 }
+
 .catalog {
   padding: 2rem;
 }
+
 .product-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  flex-wrap: wrap;
   justify-content: center;
 }
+
 .product {
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 1rem;
-  width: 250px;
   text-align: center;
 }
+
 .product img {
   width: 100%;
   height: 180px;
@@ -61,21 +69,25 @@ nav a {
   border-radius: 6px;
   margin-bottom: 15px;
 }
+
 .product-detail {
   padding: 2rem;
   text-align: center;
 }
+
 .product-detail img {
   width: 300px;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+
 .price {
   font-weight: bold;
   margin: 0.5rem 0;
   color: #B89C7A;
 }
+
 footer {
   background: #B89C7A;
   color: white;
