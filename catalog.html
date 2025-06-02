@@ -2,43 +2,156 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>INWOOD — Каталог</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Каталог — INWOOD</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Минимальный стиль для каталога */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fafafa;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .product-card p {
+      font-size: 14px;
+      color: #555;
+      flex-grow: 1;
+      text-align: center;
+    }
+    .price {
+      font-weight: bold;
+      margin: 15px 0 10px;
+      font-size: 16px;
+      color: #222;
+    }
+    .product-card button {
+      background-color: #3a7bd5;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    .product-card button:hover {
+      background-color: #2a5cac;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>INWOOD</h1>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="#">О нас</a>
-      <a href="#">Контакты</a>
-    </nav>
-  </header>
 
-  <main class="catalog">
-    <h2>Каталог</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="assets/img/largo_oak.jpg" alt="Стол LARGO OAK">
-        <h3>Обеденный стол "LARGO OAK"</h3>
-        <p class="price">42 000 ₽</p>
-        <a href="product.html?id=1" class="btn-small">Подробнее</a>
-      </div>
-      <div class="product">
-        <img src="assets/img/softline.jpg" alt="Кресло SOFTLINE">
-        <h3>Кресло "SOFTLINE"</h3>
-        <p class="price">18 500 ₽</p>
-        <a href="product.html?id=2" class="btn-small">Подробнее</a>
-      </div>
+  <h1>Каталог мебели INWOOD</h1>
+
+  <div class="catalog">
+    <div class="product-card">
+      <img src="assets/product1.jpg" alt="Стул классический" />
+      <h3>Стул классический</h3>
+      <p>Комфортный и стильный стул из натурального дерева.</p>
+      <div class="price">3 500 ₽</div>
+      <button>Подробнее</button>
     </div>
-  </main>
+    <div class="product-card">
+      <img src="assets/product2.jpg" alt="Кухонный стол" />
+      <h3>Кухонный стол</h3>
+      <p>Прочный стол с ламинированной поверхностью, идеально для кухни.</p>
+      <div class="price">12 000 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product3.jpg" alt="Диван «Комфорт»" />
+      <h3>Диван «Комфорт»</h3>
+      <p>Удобный диван с мягкой обивкой, подходит для гостиной.</p>
+      <div class="price">25 000 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product4.jpg" alt="Книжный шкаф" />
+      <h3>Книжный шкаф</h3>
+      <p>Просторный шкаф из массива дерева для книг и декора.</p>
+      <div class="price">15 500 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product5.jpg" alt="Тумба под ТВ" />
+      <h3>Тумба под ТВ</h3>
+      <p>Стильная тумба с местом для техники и аксессуаров.</p>
+      <div class="price">9 800 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product6.jpg" alt="Кресло-качалка" />
+      <h3>Кресло-качалка</h3>
+      <p>Комфортное кресло для отдыха с плавным качанием.</p>
+      <div class="price">7 400 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product7.jpg" alt="Прикроватная тумба" />
+      <h3>Прикроватная тумба</h3>
+      <p>Удобная тумба с ящиками для спальни.</p>
+      <div class="price">5 900 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product8.jpg" alt="Обеденный стол" />
+      <h3>Обеденный стол</h3>
+      <p>Большой стол из массива дерева для семейных ужинов.</p>
+      <div class="price">18 200 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product9.jpg" alt="Офисное кресло" />
+      <h3>Офисное кресло</h3>
+      <p>Эргономичное кресло с регулировкой высоты и наклона.</p>
+      <div class="price">11 000 ₽</div>
+      <button>Подробнее</button>
+    </div>
+    <div class="product-card">
+      <img src="assets/product10.jpg" alt="Комод с четырьмя ящиками" />
+      <h3>Комод с четырьмя ящиками</h3>
+      <p>Практичный комод для хранения вещей в спальне.</p>
+      <div class="price">14 300 ₽</div>
+      <button>Подробнее</button>
+    </div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 INWOOD</p>
-  </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
+
